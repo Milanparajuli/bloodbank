@@ -1,1 +1,35 @@
 {% extends 'master/index.html' %}
+
+{% block title %}
+    login - blood Donation
+{% endblock %}
+
+{% block body %}
+    <div class="bg">
+        <div class="container">
+            <div class="row justify-content-md-center">
+                <div class="col-5">
+                    <div class="card login-card">
+                        <div class="card-title mx-3 my-3">
+                            <h5>Login-Blood Donation</h5>
+                        </div>
+                        <div class="form" mx-3 my-3>
+                            <form action="#" method="post">
+                                <div class="input-group mb-3">
+                                  <span class="input-group-text" id="basic-addon1">Email</span>
+                                  <input type="text" class="form-control" name="email" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                                </div>
+                                 <div class="input-group mb-3">
+                                  <span class="input-group-text" id="password">Password</span>
+                                  <input type="password" name="password" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                                </div>
+                                <hr/>
+                                <button type="submit" class="btn btn-success">Login</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
