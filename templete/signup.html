@@ -1,1 +1,29 @@
 {% extends 'master/index.html' %}
+
+
+{% block title %}
+    login - blood Donation
+{% endblock %}
+
+{% block body %}
+    <div class="bg">
+        <div class="container">
+            <div class="row justify-content-md-center">
+                <div class="col-5">
+                    <div class="card login-card">
+                        <div class="card-title mx-3 my-3">
+                            <h5>Signup-Blood Donation</h5>
+                        </div>
+                        <div class="form" mx-3 my-3>
+                            <form action="#" method="post">
+                                <hr/>
+                                {{form.as_p}}
+                                <button type="submit" class="btn btn-success">sign up</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
